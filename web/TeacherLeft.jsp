@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -9,39 +10,19 @@
 		<div class="nav">
 			<div class="nav-list">
 				<div class="nav-tit">
-					<a href="StatisticalFigure.html" target="main">
-						<img src="images/personal-msg.png" style="height: 30px" alt="">
-						<span>统计图</span>
-					</a>
-				</div>
-				<div class="nav-tit">
-					<a href="TeacherPersonalInfo.html" target="main">
+					<a href="TeacherPersonalInfo.jsp" target="main">
 						<img src="images/archives-msg.png" alt="">
 						<span>个人信息</span>
 					</a>
 				</div>
-				<div class="nav-tit">
-					<a href="TeacherInfo.html" target="main">
-						<img src="images/job-msg.png" alt="">
-						<span>教师信息</span>
-					</a>
-				</div>
 				<div class="nav-tit" id="personal">
-					<a href="StudentInfo.html" target="main">
+					<a href="BooksInfo.jsp" target="main">
 						<img src="images/PubMed-msg.png" alt="">
-						<span>学生信息</span>
+						<span>图书信息</span>
 					</a>
 				</div>
-				<div class="personal-list" id="personal_child">
-					<ul>
-						<li><a href="FamilyInformation.html" target="main">学生基本信息</a></li>
-						<li><a href="TeacherEmInformation.html" target="main">就业学生信息</a></li>
-						<li><a href="Teacherinvestigation.html" target="main">就业信息调查</a></li>
-						<li><a href="TeacherPubMed.html" target="main">考研学生信息</a></li>
-					</ul>
-				</div>
 				<div class="nav-tit">
-					<a href="StudentRevise.html" target="main">
+					<a href="StudentRevise.jsp" target="main">
 					<img src="images/modify-password.png" alt="">
 					<span>修改密码</span>
 					</a>

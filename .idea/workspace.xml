@@ -6,7 +6,28 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be3e6819-c5b0-436e-a378-84bf0757ba4c" name="Default Changelist" comment="" />
+    <list default="true" id="be3e6819-c5b0-436e-a378-84bf0757ba4c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_web_Terminal_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java_web_Terminal_Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/StatisticalFigure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/StudentIndext.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/StudentIndext.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/TeacherEmInformation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/TeacherIndex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/TeacherInfo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/TeacherLeft.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/TeacherLeft.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/TeacherPubMed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/Teacherinvestigation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/StatisticalFigure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/StudentIndext.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/StudentIndext.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/TeacherEmInformation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/TeacherIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/TeacherIndex.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/TeacherInfo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/TeacherLeft.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/TeacherLeft.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/TeacherPubMed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Teacherinvestigation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +40,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -27,6 +51,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1lSRiHIjhhA3giXvlc3ww1sMa86" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -43,10 +68,24 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="library" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.59" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="b2a9dca7-9d0b-4e1e-98a8-afb19c1328d2" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="java_web_Terminal_Project:war exploded">
           <settings>
@@ -178,9 +217,33 @@
       <workItem from="1608169213977" duration="1190000" />
       <workItem from="1608188310748" duration="1242000" />
     </task>
+    <task id="LOCAL-00001" summary="add jar">
+      <created>1608387864754</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608387864754</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add jar" />
+    <option name="LAST_COMMIT_MESSAGE" value="add jar" />
   </component>
 </project>
