@@ -8,25 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="be3e6819-c5b0-436e-a378-84bf0757ba4c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_web_Terminal_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java_web_Terminal_Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/StatisticalFigure.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/StudentIndext.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/StudentIndext.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/TeacherEmInformation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/TeacherIndex.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/TeacherInfo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/TeacherLeft.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/TeacherLeft.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/TeacherPubMed.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/Teacherinvestigation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/StatisticalFigure.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/StudentIndext.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/StudentIndext.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/TeacherEmInformation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/TeacherIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/TeacherIndex.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/TeacherInfo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/TeacherLeft.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/TeacherLeft.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/TeacherPubMed.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Teacherinvestigation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -68,19 +50,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="library" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.59" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="b2a9dca7-9d0b-4e1e-98a8-afb19c1328d2" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />

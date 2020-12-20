@@ -6,6 +6,7 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/login.css"/>
     <script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script>
         function refreshCode() {
             //1.切换验证码
@@ -32,37 +33,41 @@
         <div class="content-right">
             <div class="login-form">
                 <h2>用户登录/LOGIN</h2>
-                <div class="identifire">
-                    <span>身　份：</span>
-                    <select>
-                        <option value="学生" selected="selected">学生</option>
-                        <option value="教师教辅人员">教师教辅人员</option>
-                    </select>
-                </div>
-                <div class="account clearfix">
-                    <span>账　号：</span>
-                    <input type="text" value="" />
-                </div>
-                <div class="password clearfix">
-                    <span>密　码：</span>
-                    <input type="text" value="" />
-                </div>
-                <div class="code clearfix">
-                    <span>验证码：</span>
-                    <input type="text" id="verifycode" name="verifycode" placeholder="请输入验证码"/>
-                    <a href="javascript:refreshCode()" style="padding-left: 10px">
-                        <img src="${pageContext.request.contextPath}/checkCodeServlet" title="刷新" id="vcode">
-                    </a>
-                </div>
-                <div class="btn">
-                    <span id="login"><a>登录</a></span>
-                    <span class="forget"><a href="password.jsp">忘记密码</a></span>
-                </div>
+                <form action="${pageContext.request.contextPath}/loginServlet" method="post">
+                    <div class="identifire">
+                        <span>身　份：</span>
+                        <select>
+                            <option value="学生" selected="selected">学生</option>
+                            <option value="教师教辅人员">教师教辅人员</option>
+                        </select>
+                    </div>
+                    <div class="account clearfix">
+                        <span>账　号：</span>
+                        <input type="text" value="" />
+                    </div>
+                    <div class="password clearfix">
+                        <span>密　码：</span>
+                        <input type="text" value="" />
+                    </div>
+                    <div class="code clearfix">
+                        <span>验证码：</span>
+                        <input type="text" id="verifycode" name="verifycode" placeholder="请输入验证码"/>
+                        <a href="javascript:refreshCode()" style="padding-left: 10px">
+                            <img src="${pageContext.request.contextPath}/checkCodeServlet" title="刷新" id="vcode">
+                        </a>
+                    </div>
+                    <div class="btn">
+                        <input class="btn btn btn-primary" type="submit" value="登录">
+<%--                        <span id="login"><a>登录</a></span>--%>
+                        <span class="forget"><a href="password.jsp">忘记密码</a></span>
+                    </div>
+                </form>
+
             </div>
         </div>
     </div>
 </div>
-<script type="text/javascript">
+<%--<script type="text/javascript">
     $(document).ready(function(){
         $('#login').on('click','a',function(){
             var aVal = $('.identifire select');
@@ -75,7 +80,7 @@
     });
 
 
-</script>
+</script>--%>
 <!--<script type="text/javascript">
     $(document).ready(function(){
         if (window.PIE) {
