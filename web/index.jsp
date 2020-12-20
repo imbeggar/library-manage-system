@@ -74,7 +74,7 @@
             if (aVal.val() == '学生') {
                 $(this).attr('href','StudentIndext.jsp');
             } else if (aVal.val() == '教师教辅人员'){
-                $(this).attr('href','TeacherIndex.html');
+                $(this).attr('href','TeacherIndex.jsp');
             }
         });
     });

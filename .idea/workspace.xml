@@ -7,22 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be3e6819-c5b0-436e-a378-84bf0757ba4c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/LoginServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="library-manage-system" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -37,6 +33,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1lSRiHIjhhA3giXvlc3ww1sMa86" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -44,20 +41,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/js" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\HZP\Desktop\web_class\temp\library-manage-system\web\js" />
       <recent name="C:\Users\HZP\Desktop\web_class\java_web_Terminal_Project\web" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="library" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.9" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:80/library/" />
+    <configuration name="library" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.59" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="b2a9dca7-9d0b-4e1e-98a8-afb19c1328d2" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="java_web_Terminal_Project:war exploded">
           <settings>
@@ -67,7 +64,6 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_0_9_java_web_Terminal_Project" />
-        <option name="HTTP_PORT" value="80" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -167,7 +163,7 @@
       </list>
     </option>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -189,84 +185,34 @@
       <workItem from="1608077647419" duration="4271000" />
       <workItem from="1608169213977" duration="1190000" />
       <workItem from="1608188310748" duration="1242000" />
-      <workItem from="1608447387841" duration="2825000" />
     </task>
+    <task id="LOCAL-00001" summary="add jar">
+      <created>1608387864754</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608387864754</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="223" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608448069258">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="223" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1608448069258" />
-    <state x="452" y="61" key="#library" timestamp="1608448008355">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="452" y="61" key="#library/0.0.1536.834@0.0.1536.834" timestamp="1608448008355" />
-    <state x="277" y="13" key="CommitChangelistDialog2" timestamp="1608450233669">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="277" y="13" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1608450233669" />
-    <state x="549" y="175" key="FileChooserDialogImpl" timestamp="1608448038351">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="549" y="175" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1608448038351" />
-    <state width="1024" height="139" key="GridCell.Tab.0.bottom" timestamp="1608449300527">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1024" height="139" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608449300527" />
-    <state width="1024" height="139" key="GridCell.Tab.0.center" timestamp="1608449300526">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1024" height="139" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1608449300526" />
-    <state width="1024" height="139" key="GridCell.Tab.0.left" timestamp="1608449300526">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1024" height="139" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1608449300526" />
-    <state width="1024" height="139" key="GridCell.Tab.0.right" timestamp="1608449300526">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1024" height="139" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1608449300526" />
-    <state width="1024" height="139" key="GridCell.Tab.1.bottom" timestamp="1608449300455">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1024" height="139" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608449300455" />
-    <state width="1024" height="139" key="GridCell.Tab.1.center" timestamp="1608449300455">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1024" height="139" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1608449300455" />
-    <state width="1024" height="139" key="GridCell.Tab.1.left" timestamp="1608449300455">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1024" height="139" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1608449300455" />
-    <state width="1024" height="139" key="GridCell.Tab.1.right" timestamp="1608449300455">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1024" height="139" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1608449300455" />
-    <state width="1024" height="139" key="GridCell.Tab.2.bottom" timestamp="1608449300456">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1024" height="139" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608449300456" />
-    <state width="1024" height="139" key="GridCell.Tab.2.center" timestamp="1608449300456">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1024" height="139" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1608449300456" />
-    <state width="1024" height="139" key="GridCell.Tab.2.left" timestamp="1608449300455">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1024" height="139" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1608449300455" />
-    <state width="1024" height="139" key="GridCell.Tab.2.right" timestamp="1608449300456">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1024" height="139" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1608449300456" />
-    <state x="272" y="62" key="SettingsEditor" timestamp="1608450056510">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="272" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1608450056510" />
+    <MESSAGE value="add jar" />
+    <option name="LAST_COMMIT_MESSAGE" value="add jar" />
   </component>
 </project>
