@@ -49,8 +49,7 @@
     <div class="container">
         <h2 class="left">图书管理系统</h2>
         <div class="right">
-            <span class="l">注销</span>
-            <span class="r">退出登录</span>
+            <span class="r"><a>注销</a></span>
         </div>
     </div>
 </div>
