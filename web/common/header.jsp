@@ -1,3 +1,4 @@
+<%@ page import="com.tlshzp.utils.CookieUtils" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -15,7 +16,7 @@
             background: #177ec1;
         }
         .bx .container{
-            margin: 0 60px;
+            margin: 0 10px 0 30px;
             overflow: hidden;
         }
         .bx .container .left{
@@ -28,7 +29,7 @@
         }
         .bx .container .right{
             overflow: hidden;
-            width: 124px;
+            width: 200px;
             padding-top: 19px;
             float: right;
         }
@@ -49,7 +50,8 @@
     <div class="container">
         <h2 class="left">图书管理系统</h2>
         <div class="right">
-            <span class="r"><a>注销</a></span>
+            <span class="l">欢迎<%=CookieUtils.getAcount(request.getCookies(), request.getSession(), response).getNumber()%></span>
+            <span class="r" ><a href="../logoutServlet" target="_parent">注销</a></span>
         </div>
     </div>
 </div>

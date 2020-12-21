@@ -4,8 +4,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" href="css/common.css">
-		<link rel="stylesheet" type="text/css" href="css/StudentInfo.css"/>
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" type="text/css" href="../css/StudentInfo.css"/>
 	</head>
 	<body>
 		<div class="container flgure">
@@ -62,7 +62,7 @@
 			</div>
 		</div>
 		
-		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript">
 			$('.info li').click(function() {
 				$(this).addClass("active").siblings().removeClass("active");

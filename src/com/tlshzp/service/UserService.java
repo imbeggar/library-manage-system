@@ -1,12 +1,10 @@
-package com.tlshzp.dao;
+package com.tlshzp.service;
 
-import com.tlshzp.pojo.Book;
 import com.tlshzp.pojo.User;
 
-import java.util.Date;
 import java.util.List;
 
-public interface UserDao {
+public interface UserService {
     //增
     int insertUser(User user);
     int insertUser(List<User> users);

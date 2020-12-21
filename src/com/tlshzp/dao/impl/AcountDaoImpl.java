@@ -36,6 +36,13 @@ public class AcountDaoImpl implements AcountDao {
     }
 
     @Override
+    public int updateAcount(Acount acount) {
+        String sql = "update acount set password = ?, identify = ? where number = ?";
+        int count = template.update(sql, new Object[]{acount.getPassword(), acount.isIdentify(), acount.getNumber()});
+        return count;
+    }
+
+    @Override
     public int insertVerify(long number, String password, boolean identify) {
         return 0;
     }

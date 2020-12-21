@@ -61,11 +61,12 @@ public class LoginServlet extends HttpServlet {
         Cookie cookie = new Cookie("uuid", uuid);
         cookie.setMaxAge(60 * 60 * 24 * 3);
         response.addCookie(cookie);
+        session.setMaxInactiveInterval(60 * 60 * 24 * 3);
         session.setAttribute(uuid, acount);
         if (!acount.isIdentify())
-            response.sendRedirect("StudentIndex.jsp");
+            response.sendRedirect("user/index.jsp");
         else
-            response.sendRedirect("TeacherIndex.jsp");
+            response.sendRedirect("admin/index.jsp");
         return;
     }
 

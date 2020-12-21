@@ -14,6 +14,8 @@ import java.util.Random;
 @WebServlet("/checkCodeServlet")
 public class CheckCodeServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
+        response.setContentType("text/html;charset=utf-8");
         //服务器通知浏览器不要缓存
         response.setHeader("pragma", "no-cache");
         response.setHeader("cache-contro", "no-cache");

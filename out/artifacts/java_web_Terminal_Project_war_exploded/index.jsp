@@ -1,5 +1,6 @@
 <%@ page import="com.tlshzp.servlet.LoginServlet" %>
 <%@ page import="com.tlshzp.pojo.Acount" %>
+<%@ page import="com.tlshzp.utils.CookieUtils" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -23,23 +24,9 @@
 </head>
 <body>
 <%
-    Cookie[] cookies = request.getCookies();
-    if (cookies != null)
-        for (Cookie cookie : cookies)
-            if (cookie.getName().equals("uuid")) {
-                String uuid = cookie.getValue();
-                Acount acount = (Acount) session.getAttribute(uuid);
-                if (acount == null) return;
-                cookie = new Cookie("uuid", uuid);
-                cookie.setMaxAge(60 * 60 * 24 * 3);
-                response.addCookie(cookie);
-                session.setAttribute(uuid, acount);
-                if (!acount.isIdentify())
-                    response.sendRedirect("StudentIndex.jsp");
-                else
-                    response.sendRedirect("TeacherIndex.jsp");
-                return;
-            }
+    int identify = CookieUtils.checkIdentify(request.getCookies(), session, response);
+    if (identify == 1) response.sendRedirect("user/index.jsp");
+    else if (identify == 2) response.sendRedirect("admin/index.jsp");
 %>
 <div class="login">
     <div class="content clearfix">
@@ -74,7 +61,7 @@
                     <br/>
                     <div class="btn">
                         <input type="submit" style="display: block;width: 110px;height: 100%;line-height: 30px;text-align: center;background: #4fadeb;font-size: 18px;color: #fff;" value="登录">
-                        <span class="forget"><a href="password.jsp">忘记密码</a></span>
+                        <span class="forget"><a href="forgetPwd.jsp">忘记密码</a></span>
                     </div>
                 </form>
             </div>

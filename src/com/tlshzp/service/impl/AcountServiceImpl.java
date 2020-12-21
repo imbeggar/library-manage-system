@@ -16,6 +16,11 @@ public class AcountServiceImpl implements AcountService {
     }
 
     @Override
+    public int updateAcount(Acount acount) {
+        return ad.updateAcount(acount);
+    }
+
+    @Override
     public int insertVerify(long number, String password, boolean identify) {
         return 0;
     }

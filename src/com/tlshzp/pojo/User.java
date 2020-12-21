@@ -73,6 +73,14 @@ public class User {
         this.email = email;
     }
 
+    public User() {
+        this.number = 0;
+        this.name = null;
+        this.sex = false;
+        this.phone = 0;
+        this.email = null;
+    }
+
     public User(long number, String name, boolean sex, long call, String email) {
         this.number = number;
         this.name = name;

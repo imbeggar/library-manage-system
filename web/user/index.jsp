@@ -8,18 +8,16 @@
             margin: 0;
             padding: 0;
         }
-        frame{
-            height: 2000px;
-        }
     </style>
 </head>
-<frameset frameborder="0" rows="60,*">
-    <frame src="StudentTop.jsp" noresize="noresize" scrolling="no" />
+<frameset frameborder="0" rows="60, *, 50">
+    <frame src="../common/header.jsp" noresize="noresize" scrolling="no" />
     <frameset frameborder="0" cols="210,*">
-        <frame src="StudentLeft.jsp" noresize="noresize" scrolling="no" />
-        <frame noresize="noresize" scrolling="yes" name="main" />
+        <frame src="left.jsp" noresize="noresize" scrolling="no" />
+        <frame src="search.jsp" noresize="noresize" scrolling="yes" name="main" />
         <!-- <frame noresize="noresize" scrolling="no" name="main"  src="首页.html"/> -->
     </frameset>
+    <frame src="../common/bottom.jsp" noresize="noresize" scrolling="no" />
 </frameset>
 </html>
 

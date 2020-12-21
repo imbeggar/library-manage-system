@@ -6,46 +6,61 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be3e6819-c5b0-436e-a378-84bf0757ba4c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Druid.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/dao/AcountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/dao/BookDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/dao/impl/AcountDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/pojo/Acount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/pojo/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/service/AcountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/service/impl/AcountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/LogoutServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/utils/JDBCUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-beanutils-1.8.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-logging-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/druid-1.2.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/hamcrest-core-1.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/javax.servlet.jsp.jstl.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jsp-api.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jstl-impl.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/junit-4.12.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.48.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/servlet-api.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-beans-5.2.9.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-core-5.2.9.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-jdbc-5.2.9.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-tx-5.2.9.RELEASE.jar" afterDir="false" />
+    <list default="true" id="be3e6819-c5b0-436e-a378-84bf0757ba4c" name="Default Changelist" comment="添加cookie-session实现免登录">
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/fliter/AdminFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/fliter/CommonFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/fliter/UserFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/listener/CountLitsener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/ReviseServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/UpdatePersonalInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/utils/CookieUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/common/bottom.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_web_Terminal_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java_web_Terminal_Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/StudentIndext.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/StudentTop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/StudentTop.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/StudentInformation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/StudentLeft.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/StudentPubMed.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/StudentRevise.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/StudentRight.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/StudentTop.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/WEB-INF/classes/com/tlshzp/servlet/CheckCodeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/WEB-INF/classes/com/tlshzp/servlet/CheckCodeServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/css/student.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/css/student.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/password.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/search.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/student.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_web_Terminal_Project/com/tlshzp/servlet/CheckCodeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_web_Terminal_Project/com/tlshzp/servlet/CheckCodeServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/Druid.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/dao/AcountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/dao/AcountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/dao/impl/AcountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/dao/impl/AcountDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/service/AcountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/service/AcountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/service/impl/AcountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/service/impl/AcountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/servlet/CheckCodeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/CheckCodeServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tlshzp/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/StudentIndext.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/StudentIndex.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/StudentTop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/StudentTop.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/servlet/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/BooksInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/booksManage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/StudentIndex.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/user/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/StudentInformation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/StudentLeft.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/user/left.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/StudentPubMed.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/user/pubMed.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/StudentRevise.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/common/revise.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/StudentRight.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/StudentTop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/common/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/TeacherIndex.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/TeacherLeft.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/left.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/TeacherPersonalInfo.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/TeacherRight.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/TeacherTop.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/student.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/student.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/password.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/forgetPwd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/user/search.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/student.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/common/personalInfo.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +70,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Interface" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -83,7 +98,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
@@ -93,6 +108,13 @@
       <recent name="D:\Code\java_web_Terminal_Project2.0\src" />
       <recent name="D:\Code\java_web_Terminal_Project2.0\web\WEB-INF\lib" />
       <recent name="C:\Users\HZP\Desktop\web_class\java_web_Terminal_Project\web" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Code\java_web_Terminal_Project2.0\web\admin" />
+      <recent name="D:\Code\java_web_Terminal_Project2.0\web\teacher" />
+      <recent name="D:\Code\java_web_Terminal_Project2.0\web\common" />
+      <recent name="D:\Code\java_web_Terminal_Project2.0\web\user" />
+      <recent name="D:\Code\java_web_Terminal_Project2.0\web\student" />
     </key>
   </component>
   <component name="RunManager">
@@ -107,8 +129,86 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="40e04776-9092-4ff1-8d2c-c6550a52c3c5" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="1541" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="library" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.59" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="b2a9dca7-9d0b-4e1e-98a8-afb19c1328d2" />
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
@@ -242,6 +342,10 @@
       <workItem from="1608077647419" duration="4271000" />
       <workItem from="1608169213977" duration="1190000" />
       <workItem from="1608188310748" duration="1242000" />
+      <workItem from="1608513325099" duration="27893000" />
+      <workItem from="1608550388180" duration="71000" />
+      <workItem from="1608550602096" duration="246000" />
+      <workItem from="1608550857919" duration="7620000" />
     </task>
     <task id="LOCAL-00001" summary="add jar">
       <created>1608387864754</created>
@@ -250,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608387864754</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="添加cookie-session实现免登录">
+      <created>1608480794322</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608480794322</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +381,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add jar" />
-    <option name="LAST_COMMIT_MESSAGE" value="add jar" />
+    <MESSAGE value="添加cookie-session实现免登录" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加cookie-session实现免登录" />
   </component>
 </project>

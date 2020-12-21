@@ -9,8 +9,8 @@
     <meta charset="UTF-8">
     <title></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="css/StudentPubMed.css"/>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/StudentPubMed.css"/>
 
 
 </head>
@@ -54,7 +54,7 @@
         </div>
     </div>
 </div>
-<script src="js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery-1.9.1.min.js"></script>
 <script>
     $('.l').click(function () {
         $('.oInp').removeAttr('disabled');
