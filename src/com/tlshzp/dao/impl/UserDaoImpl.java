@@ -52,7 +52,7 @@ public class UserDaoImpl implements UserDao {
     @Override
     public int deleteUserByNumber(long number) {
         String sql = "delete from user where number = ?";
-        int count = template.update(sql, new Object[]{number});
+        int count = template.update(sql, number);
         return count;
     }
 
@@ -100,28 +100,28 @@ public class UserDaoImpl implements UserDao {
     @Override
     public List<User> findUserByName(String name) {
         String sql = "select * from user where name = ?";
-        List<User> users = template.query(sql, new BeanPropertyRowMapper<User>(User.class));
+        List<User> users = template.query(sql, new BeanPropertyRowMapper<User>(User.class), name);
         return users;
     }
 
     @Override
     public List<User> findUserBySex(boolean sex) {
         String sql = "select * from user where sex = ?";
-        List<User> users = template.query(sql, new BeanPropertyRowMapper<User>(User.class));
+        List<User> users = template.query(sql, new BeanPropertyRowMapper<User>(User.class), sex);
         return users;
     }
 
     @Override
     public List<User> findUserByPhone(long phone) {
         String sql = "select * from user where phone = ?";
-        List<User> users = template.query(sql, new BeanPropertyRowMapper<User>(User.class));
+        List<User> users = template.query(sql, new BeanPropertyRowMapper<User>(User.class), phone);
         return users;
     }
 
     @Override
     public List<User> findUserByEmail(String email) {
         String sql = "select * from user where email = ?";
-        List<User> users = template.query(sql, new BeanPropertyRowMapper<User>(User.class));
+        List<User> users = template.query(sql, new BeanPropertyRowMapper<User>(User.class), email);
         return users;
     }
 }

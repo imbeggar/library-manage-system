@@ -84,6 +84,9 @@ public class Book {
         this.back_date = back_date;
     }
 
+    public Book() {
+    }
+
     public Book(int id, String bookName, String author, String publisher, Date borrow_date, Date back_date) {
         this.id = id;
         this.bookName = bookName;

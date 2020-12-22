@@ -1,11 +1,11 @@
-package com.tlshzp.dao;
+package com.tlshzp.service;
 
 import com.tlshzp.pojo.Book;
 
 import java.util.Date;
 import java.util.List;
 
-public interface BookDao {
+public interface BookService {
     //增
     int insertBook(Book book);
     int insertBook(List<Book> books);

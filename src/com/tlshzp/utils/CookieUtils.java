@@ -1,11 +1,13 @@
 package com.tlshzp.utils;
 
 import com.tlshzp.pojo.Acount;
+import com.tlshzp.pojo.BBInfo;
 import com.tlshzp.pojo.User;
-import com.tlshzp.service.UserService;
+import com.tlshzp.service.impl.BBInfoServiceImpl;
 import com.tlshzp.service.impl.UserServiceImpl;
 
 import javax.servlet.http.*;
+import java.util.List;
 
 public class CookieUtils {
     //0未登录、1学生、2教师
@@ -52,6 +54,25 @@ public class CookieUtils {
                     setCookie_3(cookie, resp);
                     User user = new UserServiceImpl().findUserByNumber(acount.getNumber());
                     return user;
+                }
+            }
+        }
+        return null;
+    }
+
+    public static List<BBInfo> getBBInfo(Cookie[] cookies, HttpSession session, HttpServletResponse resp) {
+        if (cookies != null) {
+            for (Cookie cookie : cookies) {
+                if (cookie.getName().equals("uuid")) {
+                    String uuid = cookie.getValue();
+                    Acount acount = (Acount) session.getAttribute(uuid);
+                    if (acount == null) {
+                        setCookie_0(cookie, resp);
+                        return null;
+                    }
+                    setCookie_3(cookie, resp);
+                    List<BBInfo> bbInfos = new BBInfoServiceImpl().findInfoByNumber(acount.getNumber());
+                    return bbInfos;
                 }
             }
         }
