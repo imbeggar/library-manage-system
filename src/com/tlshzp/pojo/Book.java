@@ -1,5 +1,6 @@
 package com.tlshzp.pojo;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Objects;
 
@@ -85,6 +86,8 @@ public class Book {
     }
 
     public Book() {
+        this.borrow_date = new Date();
+        this.back_date = new Date();
     }
 
     public Book(int id, String bookName, String author, String publisher, Date borrow_date, Date back_date) {
@@ -95,4 +98,5 @@ public class Book {
         this.borrow_date = borrow_date;
         this.back_date = back_date;
     }
+
 }

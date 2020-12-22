@@ -3,13 +3,9 @@ package com.tlshzp.dao.impl;
 import com.tlshzp.dao.AcountDao;
 import com.tlshzp.pojo.Acount;
 import com.tlshzp.utils.JDBCUtils;
-import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.ResultSetExtractor;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class AcountDaoImpl implements AcountDao {
@@ -19,19 +15,7 @@ public class AcountDaoImpl implements AcountDao {
     @Override
     public Acount findAcountByNumber(long number) {
         String sql = "select * from acount where number = ?";
-        Acount acount = template.query(sql, new ResultSetExtractor<Acount>() {
-            @Override
-            public Acount extractData(ResultSet resultSet) throws SQLException, DataAccessException {
-                Acount acount1 = null;
-                if (resultSet.next()) {
-                    acount1 = new Acount();
-                    acount1.setNumber(resultSet.getLong("number"));
-                    acount1.setPassword(resultSet.getString("password"));
-                    acount1.setIdentify(resultSet.getBoolean("identify"));
-                }
-                return acount1;
-            }
-        }, number);
+        Acount acount = template.queryForObject(sql, new BeanPropertyRowMapper<>(Acount.class), number);
         return acount;
     }
 

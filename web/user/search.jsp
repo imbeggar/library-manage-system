@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../css/StudentPubMed.css"/>
 </head>
 
-<body>
+<body onload="refresh();">
 <div class="container">
     <div class="search-content content clearfix">
         <div class="search-bar  clearfix ">
@@ -27,31 +28,31 @@
                     <li>作者</li>
                 </ul>
             </div>
-            <div class="bottom" style="margin: 10px">
-                <form>
-                    <table class="table table-bordered">
-                        <tr>
-                            <th>编号</th>
-                            <th>书名</th>
-                            <th>作者</th>
-                            <th>出版社</th>
-                            <th>借书日期</th>
-                            <th>归还日期</th>
-                        </tr>
-                        <c:forEach var="book" items="${books}">
-                            <tr>
-                                <td>${book.id}</td>
-                                <td>${book.bookName}</td>
-                                <td>${book.author}</td>
-                                <td>${book.publisher}</td>
-                                <td>${book.borrow_date}</td>
-                                <td>${book.back_date}</td>
-                            </tr>
-                        </c:forEach>
-                    </table>
-                </form>
-            </div>
         </div>
+    </div>
+    <div style="margin: 10px">
+        <table>
+            <thead>
+                <th>编号</th>
+                <th>书名</th>
+                <th>作者</th>
+                <th>出版社</th>
+                <th>借书日期</th>
+                <th>归还日期</th>
+            </thead>
+            <tbody>
+                <c:forEach var="book" items="${books}">
+                    <tr>
+                        <td>${book.id}</td>
+                        <td>${book.bookName}</td>
+                        <td>${book.author}</td>
+                        <td>${book.publisher}</td>
+                        <td class="book">${book.borrow_date}</td>
+                        <td class="book">${book.back_date}</td>
+                    </tr>
+                </c:forEach>
+            </tbody>
+        </table>
     </div>
 </div>
 </body>

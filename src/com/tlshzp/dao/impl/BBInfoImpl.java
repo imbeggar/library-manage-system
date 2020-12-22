@@ -24,19 +24,7 @@ public class BBInfoImpl implements BBinfoDao {
     @Override
     public BBInfo getInfoById(int id) {
         String sql = "select * from bb_info where id = ?";
-        BBInfo bbInfo = template.query(sql, new ResultSetExtractor<BBInfo>() {
-            @Override
-            public BBInfo extractData(ResultSet resultSet) throws SQLException, DataAccessException {
-                BBInfo bbInfo1 = null;
-                if (resultSet.next()) {
-                    bbInfo1.setNumber(resultSet.getLong("number"));
-                    bbInfo1.setId(resultSet.getInt("id"));
-                    bbInfo1.setBorrow_date(resultSet.getDate("borrow_date"));
-                    bbInfo1.setBack_date(resultSet.getDate("back_date"));
-                }
-                return bbInfo1;
-            }
-        }, id);
+        BBInfo bbInfo = template.queryForObject(sql, new BeanPropertyRowMapper<>(BBInfo.class), id);
         return bbInfo;
     }
 

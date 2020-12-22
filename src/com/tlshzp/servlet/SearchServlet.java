@@ -31,7 +31,6 @@ public class SearchServlet extends HttpServlet {
         books.addAll(books1);
         req.setAttribute("books", books);
         req.getRequestDispatcher("search.jsp").forward(req, resp);
-        System.out.println(books);
         return;
     }
 }

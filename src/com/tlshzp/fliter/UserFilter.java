@@ -20,6 +20,8 @@ public class UserFilter implements Filter {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) servletRequest;
         HttpServletResponse resp = (HttpServletResponse) servletResponse;
+        req.setCharacterEncoding("utf-8");
+        resp.setContentType("text/html; charset=utf-8");
         int identify = CookieUtils.checkIdentify(req.getCookies(), req.getSession(), resp);
         if (identify == 1) filterChain.doFilter(req, resp);
         else {
