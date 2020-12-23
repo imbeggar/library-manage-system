@@ -22,7 +22,7 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public int deleteBookById(String id) {
+    public int deleteBookById(int id) {
         return bd.deleteBookById(id);
     }
 

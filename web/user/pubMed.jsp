@@ -6,6 +6,7 @@
 <%@ page import="com.tlshzp.pojo.BBInfo" %>
 <%@ page import="com.tlshzp.service.BookService" %>
 <%@ page import="com.tlshzp.service.impl.BookServiceImpl" %>
+<%@ page import="java.text.SimpleDateFormat" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!--学生借书信息
     待改造！！！
@@ -32,7 +33,7 @@
         book = bs.findBookById(bbInfo.getId());
         books.add(book);
     }
-    request.setAttribute("books", books);
+    SimpleDateFormat template = new SimpleDateFormat("yyyy-MM-dd");
 %>
 <div class="container">
     <div class="content">
@@ -58,16 +59,28 @@
                                 <th>借书日期</th>
                                 <th>归还日期</th>
                             </tr>
-                            <c:forEach var="book" items="${books}">
-                                <tr>
-                                    <td>${book.id}</td>
-                                    <td>${book.bookName}</td>
-                                    <td>${book.author}</td>
-                                    <td>${book.publisher}</td>
-                                    <td>${book.borrow_date}</td>
-                                    <td>${book.back_date}</td>
-                                </tr>
-                            </c:forEach>
+<%--                            <c:forEach var="book" items="${books}">--%>
+<%--                                <tr>--%>
+<%--                                    <td>${book.id}</td>--%>
+<%--                                    <td>${book.bookName}</td>--%>
+<%--                                    <td>${book.author}</td>--%>
+<%--                                    <td>${book.publisher}</td>--%>
+<%--                                    <td>${book.borrow_date}</td>--%>
+<%--                                    <td>${book.back_date}</td>--%>
+<%--                                </tr>--%>
+<%--                            </c:forEach>--%>
+                            <%
+                                for (Book book1 : books) {
+                                    out.print("<tr>");
+                                    out.print("<td>" + book1.getId() + "</td>");
+                                    out.print("<td>" + book1.getBookName() + "</td>");
+                                    out.print("<td>" + book1.getAuthor() + "</td>");
+                                    out.print("<td>" + book1.getPublisher() + "</td>");
+                                    out.print("<td>" + template.format(book1.getBorrow_date()) + "</td>");
+                                    out.print("<td>" + template.format(book1.getBack_date()) + "</td>");
+                                    out.print("</tr>");
+                                }
+                            %>
                         </table>
                     </form>
                 </div>

@@ -1,73 +1,121 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page import="com.tlshzp.pojo.Book" %>
+<%@ page import="java.util.List" %>
+<%@ page import="com.tlshzp.service.BookService" %>
+<%@ page import="com.tlshzp.service.impl.BookServiceImpl" %>
+<%@ page import="java.text.SimpleDateFormat" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<link rel="stylesheet" href="../css/common.css">
-		<link rel="stylesheet" type="text/css" href="../css/StudentInfo.css"/>
-	</head>
-	<body>
-		<div class="container flgure">
-			<div class="content">
-				<ul class="clearfix info">
-					<li class="active">园林一班</li>
-					<li>园林二班</li>
-					<li>园林三班</li>
-					<li>园林四班</li>
-				</ul>
-				<div class="basic">
-					<div class="basicInfo select active">
-						<div class="thead">
-							<span>班级总人数：123</span>
-							<p>统计表</p>
-						</div>
-						<table border="0" cellspacing="0" cellpadding="0">
-							<tr>
-								<th></th>
-								<th>男</th>
-								<th>女</th>
-								<th>考研</th>
-								<th>就业</th>
-								<th>未就业</th>
-							</tr>
-							<tr>
-								<td>男女人数</td>
-								<td>23</td>
-								<td>23</td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>就业情况</td>
-								<td></td>
-								<td></td>
-								<td>23</td>
-								<td>23</td>
-								<td>23</td>
-							</tr>
-						</table>
-					</div>
-					<div class="payInfo select">
-						第二页
-					</div>
-					<div class="employmentInfo select">
-						第三页
-					</div>
-					<div class="provinceInfo select">
-						第四页
-					</div>
-				</div>
-			</div>
+<head>
+	<title>图书管理</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+	<div class="content"><%
+		BookService bs = new BookServiceImpl();
+		List<Book> books = bs.selectAllBooks();
+		if (books == null || books.size() == 0)
+			out.print("<div class=\"alert alert-warning\" role=\"alert\"><strong>提示</strong>没有查询到相关书籍。</div>");
+		else {
+			SimpleDateFormat template = new SimpleDateFormat("yyyy-MM-dd");
+	%>
+		<div>
+			<table class="table table-striped" style="margin-top: 20px">
+				<thead>
+				<tr>
+					<th>编号</th>
+					<th>书名</th>
+					<th>作者</th>
+					<th>出版社</th>
+					<th>借出时间</th>
+					<th>还书时间</th>
+					<th style="width: 100px;">操作</th>
+				</tr>
+				</thead>
+
+				<%--                查询--%>
+				<%--			<form action="FindBooks" method="POST">--%>
+				<%--				<tr>--%>
+				<%--					<td width="70px"><input type="text" class="form-control" name="id"></td>--%>
+				<%--					<td><input type="text" class="form-control" name="name"></td>--%>
+				<%--					<td>--%>
+				<%--						<div class="form-inline" align="center">--%>
+				<%--							<div class="form-group">--%>
+				<%--								<input type="text" class="form-control" style="width: 90px" name="priceLeft" placeholder="0">--%>
+				<%--							</div>--%>
+				<%--							---%>
+				<%--							<div class="form-group">--%>
+				<%--								<input type="text" class="form-control" style="width: 90px" name="priceRight" placeholder="∞">--%>
+				<%--							</div>--%>
+				<%--						</div>--%>
+				<%--					</td>--%>
+				<%--					<td><input type="text" class="form-control" name="author"></td>--%>
+				<%--					<td><input type="text" class="form-control" name="publisher"></td>--%>
+				<%--					<td>--%>
+				<%--						<input type="submit" value="查询" class="btn btn-sm btn-primary">--%>
+				<%--					</td>--%>
+				<%--				</tr>--%>
+				<%--			</form>--%>
+
+				<%--                展示--%>
+				<%--			<c:forEach var="book" items="${books}">--%>
+				<%--				<form action="updateBookServlet" method="POST">--%>
+				<%--					<tr>--%>
+				<%--						<td><input type="text" class="form-control" name="id" value="${book.id}" readonly="readonly"></td>--%>
+				<%--						<td><input type="text" class="form-control" name="name" value="${book.bookName}"></td>--%>
+				<%--						<td><input type="text" class="form-control" name="author" value="${book.author}"></td>--%>
+				<%--						<td><input type="text" class="form-control" name="publisher" value="${book.publisher}"></td>--%>
+				<%--						<td><input type="date" class="form-control" name="borrow_date" value="${book.borrow_date}"></td>--%>
+				<%--						<td><input type="date" class="form-control" name="back_date" value="${book.back_date}"></td>--%>
+				<%--						<td style="text-align: center;">--%>
+				<%--							<div class="row">--%>
+				<%--								<input type="submit" value="修改" class="btn btn-sm btn-primary">--%>
+				<%--								<a href="deleteBookServlet?id=${book.id}" class="btn btn-sm btn-danger">删除</a>--%>
+				<%--							</div>--%>
+				<%--						</td>--%>
+				<%--					</tr>--%>
+				<%--				</form>--%>
+				<%--			</c:forEach>--%>
+				<tbody>
+				<%
+					for (Book book : books) {
+						out.print("<form action=\"updateBookServlet\" method=\"POST\"><tr>");
+						out.print("<td><input type=\"text\" class=\"form-control\" name=\"id\" value=\"" + book.getId() +"\" readonly=\"readonly\"></td>");
+						out.print("<td><input type=\"text\" class=\"form-control\" name=\"name\" value=\"" + book.getBookName() + "\"></td>");
+						out.print("<td><input type=\"text\" class=\"form-control\" name=\"author\" value=\"" + book.getAuthor() + "\"></td>");
+						out.print("<td><input type=\"text\" class=\"form-control\" name=\"publisher\" value=\"" + book.getPublisher() + "\"></td>");
+						if (book.getBorrow_date() == null) out.print("<td colspan=\"2\"><input type=\"text\" class=\"form-control\" value=\"未借出\"， readonly=\"readonly\"></td>");
+						else {
+							out.print("<td><input type=\"date\" class=\"form-control\" name=\"borrow_date\" value=\"" + template.format(book.getBorrow_date()) + "\"></td>");
+							out.print("<td><input type=\"date\" class=\"form-control\" name=\"back_date\" value=\"" + template.format(book.getBack_date()) + "\"></td>");
+						}
+//					if (book.getBorrow_date() == null) out.print("\n" +
+//							"\t\t\t\t\t\t<td><input type=\"date\" class=\"form-control\" name=\"borrow_date\" value=\"1970-01-01\"></td>");
+//					else out.print("\n" +
+//							"\t\t\t\t\t\t<td><input type=\"date\" class=\"form-control\" name=\"borrow_date\" value=\"" + template.format(book.getBorrow_date()) + "\"></td>");
+//					if (book.getBack_date() == null) out.print("\n" +
+//							"\t\t\t\t\t\t<td><input type=\"date\" class=\"form-control\" name=\"back_date\" value=\"1970-01-01\"></td>");
+//					else out.print("\n" +
+//							"\t\t\t\t\t\t<td><input type=\"date\" class=\"form-control\" name=\"back_date\" value=\"" + template.format(book.getBack_date()) + "\"></td>");
+
+						out.print("<td style=\"text-align: center;\">" +
+								"<div class=\"row\">" +
+								"<input type=\"submit\" value=\"修改\" class=\"btn btn-sm btn-primary\">" +
+								"<a href=\"deleteBookServlet?id=" + book.getId() + "\" class=\"btn btn-sm btn-danger\">删除</a>" +
+								"</div>" +
+								"</td>" +
+								"</tr>" +
+								"</form>");
+					}
+				%>
+				</tbody>
+			</table>
 		</div>
-		
-		<script src="../js/jquery-1.9.1.min.js"></script>
-		<script type="text/javascript">
-			$('.info li').click(function() {
-				$(this).addClass("active").siblings().removeClass("active");
-				$('.basic .select').eq($("ul li").index(this)).addClass("active").siblings().removeClass("active")
-			});
-		</script>
-	</body>
+		<%}%>
+	</div>
+
+</div>
+</body>
 </html>

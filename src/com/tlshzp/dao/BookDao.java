@@ -10,7 +10,7 @@ public interface BookDao {
     int insertBook(Book book);
     int insertBook(List<Book> books);
     //删
-    int deleteBookById(String id);
+    int deleteBookById(int id);
     //改
     int updateBook(Book book);
     //查

@@ -3,13 +3,9 @@ package com.tlshzp.dao.impl;
 import com.tlshzp.dao.BookDao;
 import com.tlshzp.pojo.Book;
 import com.tlshzp.utils.JDBCUtils;
-import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.ResultSetExtractor;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -51,7 +47,7 @@ public class BookDaoImpl implements BookDao {
     }
 
     @Override
-    public int deleteBookById(String id) {
+    public int deleteBookById(int id) {
         String sql = "delete from book where id = ?";
         int count = template.update(sql, new Object[]{id});
         return count;
@@ -81,41 +77,27 @@ public class BookDaoImpl implements BookDao {
     @Override
     public Book findBookById(int id) {
         String sql = "select * from book where id = ?";
-        Book book = template.query(sql, new ResultSetExtractor<Book>() {
-            @Override
-            public Book extractData(ResultSet resultSet) throws SQLException, DataAccessException {
-                Book book1 = new Book();
-                if (resultSet.next()) {
-                    book1.setId(resultSet.getInt("id"));
-                    book1.setBookName(resultSet.getString("bookName"));
-                    book1.setAuthor(resultSet.getString("author"));
-                    book1.setPublisher(resultSet.getString("publisher"));
-                    book1.setBorrow_date(resultSet.getDate("borrow_date"));
-                    book1.setBack_date(resultSet.getDate("back_date"));
-                }
-                return book1;
-            }
-        }, id);
+        Book book = template.queryForObject(sql, new BeanPropertyRowMapper<>(Book.class), id);
         return book;
     }
 
     @Override
     public List<Book> findBookByName(String bookName) {
-        String sql = "select * from book where locate(bookName, ?)";
+        String sql = "select * from book where locate(?, bookName)";
         List<Book> books = template.query(sql, new BeanPropertyRowMapper<Book>(Book.class), bookName);
         return books;
     }
 
     @Override
     public List<Book> findBookByAuthor(String author) {
-        String sql = "select * from book where locate(author, ?)";
+        String sql = "select * from book where locate(?, author)";
         List<Book> books = template.query(sql, new BeanPropertyRowMapper<Book>(Book.class), author);
         return books;
     }
 
     @Override
     public List<Book> findBookByPublisher(String publisher) {
-        String sql = "select * from book where locate(publisher, ?)";
+        String sql = "select * from book where locate(?, publisher)";
         List<Book> books = template.query(sql, new BeanPropertyRowMapper<Book>(Book.class), publisher);
         return books;
     }

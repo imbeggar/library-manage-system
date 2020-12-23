@@ -7,20 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be3e6819-c5b0-436e-a378-84bf0757ba4c" name="Default Changelist" comment="添加cookie-session实现免登录">
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/dao/BBinfoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/dao/impl/BBInfoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/dao/impl/BookDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/pojo/BBInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/service/BBInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/service/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/service/impl/BBInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/SearchServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/AddBooksServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/AddUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/BorrowServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/DeleteBookServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/DeleteUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/UpdateBookServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/UpdateUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/utils/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/addBook.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/addUser.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/usersManage.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tlshzp/dao/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/dao/BookDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/pojo/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/pojo/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/utils/CookieUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/utils/CookieUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/dao/impl/BBInfoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/dao/impl/BBInfoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/dao/impl/BookDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/dao/impl/BookDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/fliter/AdminFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/fliter/AdminFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/servlet/SearchServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/SearchServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/booksManage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/booksManage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/left.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/left.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/user/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/user/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/user/pubMed.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/user/pubMed.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/user/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/user/search.jsp" afterDir="false" />
     </list>
@@ -32,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Interface" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -63,7 +71,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -80,15 +88,13 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -185,6 +191,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_0_9_java_web_Terminal_Project" />
+        <option name="JNDI_PORT" value="1098" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -311,6 +318,10 @@
       <workItem from="1608550602096" duration="246000" />
       <workItem from="1608550857919" duration="8448000" />
       <workItem from="1608603698050" duration="12680000" />
+      <workItem from="1608620370415" duration="4392000" />
+      <workItem from="1608628398826" duration="14129000" />
+      <workItem from="1608653524715" duration="20000" />
+      <workItem from="1608689712219" duration="32462000" />
     </task>
     <task id="LOCAL-00001" summary="add jar">
       <created>1608387864754</created>
@@ -333,7 +344,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608567220337</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="添加查看借书信息功能">
+      <created>1608620415625</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608620415625</updated>
+    </task>
+    <task id="LOCAL-00005" summary="修复借书信息查询bug">
+      <created>1608640072969</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608640072969</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,6 +380,12 @@
     <MESSAGE value="add jar" />
     <MESSAGE value="添加cookie-session实现免登录" />
     <MESSAGE value="添加功能:指定时间免密登录、在线人数统计、用户信息修改、密码修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加功能:指定时间免密登录、在线人数统计、用户信息修改、密码修改" />
+    <MESSAGE value="添加查看借书信息功能" />
+    <MESSAGE value="修复借书信息查询bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复借书信息查询bug" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

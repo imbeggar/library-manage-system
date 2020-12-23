@@ -29,9 +29,12 @@ public class SearchServlet extends HttpServlet {
         books1.addAll(books);
         books.clear();
         books.addAll(books1);
-        req.setAttribute("books", books);
+        if (books == null || books.size() == 0) {
+            req.setAttribute("search_msg", "没有查询到相关书籍");
+            req.setAttribute("books", null);
+        } else
+            req.setAttribute("books", books);
         req.getRequestDispatcher("search.jsp").forward(req, resp);
-        System.out.println(books);
         return;
     }
 }

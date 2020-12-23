@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
 		<title></title>
+		<meta charset="UTF-8">
 		<link rel="stylesheet" href="../css/StudentLeft.css">
 	</head>
 	<body>
@@ -13,6 +13,24 @@
 					<a href="booksManage.jsp" target="main">
 						<img src="../images/PubMed-msg.png" alt="">
 						<span>图书管理</span>
+					</a>
+				</div>
+				<div class="nav-tit">
+					<a href="addBook.jsp" target="main">
+						<img src="../images/job-msg.png" alt="">
+						<span>添加图书</span>
+					</a>
+				</div>
+				<div class="nav-tit" id="user">
+					<a href="usersManage.jsp" target="main">
+						<img src="../images/PubMed-msg.png" alt="">
+						<span>用户管理</span>
+					</a>
+				</div>
+				<div class="nav-tit">
+					<a href="addUser.jsp" target="main">
+						<img src="../images/job-msg.png" alt="">
+						<span>添加用户</span>
 					</a>
 				</div>
 				<div class="nav-tit">

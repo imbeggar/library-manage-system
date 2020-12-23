@@ -29,8 +29,9 @@ public class BBInfoImpl implements BBinfoDao {
             public BBInfo extractData(ResultSet resultSet) throws SQLException, DataAccessException {
                 BBInfo bbInfo1 = null;
                 if (resultSet.next()) {
-                    bbInfo1.setNumber(resultSet.getLong("number"));
+                    bbInfo1 = new BBInfo();
                     bbInfo1.setId(resultSet.getInt("id"));
+                    bbInfo1.setNumber(resultSet.getLong("number"));
                     bbInfo1.setBorrow_date(resultSet.getDate("borrow_date"));
                     bbInfo1.setBack_date(resultSet.getDate("back_date"));
                 }
