@@ -47,7 +47,7 @@ public class BookDaoImpl implements BookDao {
     }
 
     @Override
-    public int deleteBookById(String id) {
+    public int deleteBookById(int id) {
         String sql = "delete from book where id = ?";
         int count = template.update(sql, new Object[]{id});
         return count;
