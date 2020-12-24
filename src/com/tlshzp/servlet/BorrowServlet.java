@@ -44,9 +44,9 @@ public class BorrowServlet extends HttpServlet {
                     book.getBack_date()
             );
             bis.insertInfo(bbInfo);
-            req.setAttribute("search_msg", "借出成功");
+            req.setAttribute("search_msg", "借书成功");
         } else {    //已借出
-            req.setAttribute("search_msg", "该书已被借出");
+            req.setAttribute("search_msg", "该书已被借出，现不在馆内");
         }
         req.getRequestDispatcher("search.jsp").forward(req, resp);
         return;

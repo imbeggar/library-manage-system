@@ -20,15 +20,17 @@ public class UpdateBookServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         SimpleDateFormat template = new SimpleDateFormat("yyyy-MM-dd");
-        Date borrow_date = new Date();
-        Date back_date = new Date();
-        try {
-            back_date = template.parse(req.getParameter("back_date"));
-        } catch (ParseException e) {
-            e.printStackTrace();
+        Date borrow_date = null;
+        Date back_date = null;
+        if (req.getParameter("back_date") != null) {
+            borrow_date = new Date();
+            back_date = new Date();
+            if (back_date.getTime() < borrow_date.getTime()) {
+                req.setAttribute("manage_msg", "还书时间不能小于借书时间");
+                req.getRequestDispatcher("booksManage.jsp").forward(req, resp);
+                return;
+            }
         }
-        if (back_date.getTime() < borrow_date.getTime())
-            borrow_date = back_date = null;
         Book book = new Book(
                 Integer.parseInt(req.getParameter("id")),
                 req.getParameter("name"),
@@ -37,8 +39,11 @@ public class UpdateBookServlet extends HttpServlet {
                 borrow_date,
                 back_date
         );
-        if (book != null)
-            bs.updateBook(book);
-        resp.sendRedirect("booksManage.jsp");
+        if (book != null) {
+            int res = bs.updateBook(book);
+            req.setAttribute("manage_msg", "修改" + res + "条数据");
+        }
+        req.getRequestDispatcher("booksManage.jsp").forward(req, resp);
+        return;
     }
 }

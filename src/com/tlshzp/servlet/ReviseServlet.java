@@ -20,12 +20,18 @@ public class ReviseServlet extends HttpServlet {
         String origin = req.getParameter("origin");
         String new_1 = req.getParameter("new_1");
         String new_2 = req.getParameter("new_2");
+        if (origin.equals("") || new_1.equals("")||new_2.equals("")){
+            req.setAttribute("revise_msg", "密码不能为空");
+            req.getRequestDispatcher("revise.jsp").forward(req, resp);
+            return;
+        }
         if (!new_1.equals(new_2)) {
             req.setAttribute("revise_msg", "两次密码不相同！");
             req.getRequestDispatcher("revise.jsp").forward(req, resp);
             return;
         }
         Acount acount = CookieUtils.getAcount(req.getCookies(), req.getSession(), resp);
+        System.out.println(acount);
         if (acount.getPassword().equals(origin)) {
             acount.setPassword(new_1);
             if (as.updateAcount(acount) == 1) req.setAttribute("revise_msg", "成功");

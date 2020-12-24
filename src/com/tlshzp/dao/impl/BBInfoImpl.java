@@ -59,4 +59,11 @@ public class BBInfoImpl implements BBinfoDao {
         });
         return count;
     }
+
+    @Override
+    public int deleteInfoById(int id) {
+        String sql = "delete from bb_info where id = ?";
+        int count = template.update(sql, new Object[]{id});
+        return count;
+    }
 }

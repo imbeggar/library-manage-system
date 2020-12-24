@@ -31,7 +31,7 @@
 					<th>出版社</th>
 					<th>借出时间</th>
 					<th>还书时间</th>
-					<th style="width: 100px;">操作</th>
+					<th style="width: 150px;">操作</th>
 				</tr>
 				</thead>
 
@@ -103,6 +103,7 @@
 						out.print("<td style=\"text-align: center;\">" +
 								"<div class=\"row\">" +
 								"<input type=\"submit\" value=\"修改\" class=\"btn btn-sm btn-primary\">" +
+								"<a href=\"backBookServlet?id=" + book.getId() + "\" class=\"btn btn-sm btn-success\">还书</a>" +
 								"<a href=\"deleteBookServlet?id=" + book.getId() + "\" class=\"btn btn-sm btn-danger\">删除</a>" +
 								"</div>" +
 								"</td>" +

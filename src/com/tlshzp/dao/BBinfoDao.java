@@ -9,4 +9,5 @@ public interface BBinfoDao {
     BBInfo getInfoById(int id);
     List<BBInfo> getAllBBInfo();
     int insertInfo(BBInfo bbInfo);
+    int deleteInfoById(int id);
 }
