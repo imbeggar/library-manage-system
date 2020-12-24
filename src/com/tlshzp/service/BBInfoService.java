@@ -9,4 +9,5 @@ public interface BBInfoService {
     BBInfo findInfoById(int id);
     List<BBInfo> getAllBBInfo();
     int insertInfo(BBInfo bbInfo);
+    int deleteInfoById(int id);
 }

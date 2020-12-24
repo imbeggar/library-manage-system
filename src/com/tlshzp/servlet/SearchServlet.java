@@ -20,11 +20,14 @@ public class SearchServlet extends HttpServlet {
     BookService bs = new BookServiceImpl();
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String keyword = req.getParameter("keyword");
+        String str = req.getParameter("keyword").trim();
+        String[] keywords = str.split(" ");
         List<Book> books = new ArrayList<>();
-        books.addAll(bs.findBookByName(keyword));
-        books.addAll(bs.findBookByAuthor(keyword));
-        books.addAll(bs.findBookByPublisher(keyword));
+        for (String keyword : keywords) {
+            books.addAll(bs.findBookByName(keyword));
+            books.addAll(bs.findBookByAuthor(keyword));
+            books.addAll(bs.findBookByPublisher(keyword));
+        }
         Set<Book> books1 = new HashSet<>();
         books1.addAll(books);
         books.clear();
@@ -32,8 +35,10 @@ public class SearchServlet extends HttpServlet {
         if (books == null || books.size() == 0) {
             req.setAttribute("search_msg", "没有查询到相关书籍");
             req.setAttribute("books", null);
-        } else
+        } else {
+            req.setAttribute("search_msg", "查询到" + books.size() + "本相关书籍");
             req.setAttribute("books", books);
+        }
         req.getRequestDispatcher("search.jsp").forward(req, resp);
         return;
     }

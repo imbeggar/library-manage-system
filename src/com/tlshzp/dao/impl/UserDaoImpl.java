@@ -79,7 +79,21 @@ public class UserDaoImpl implements UserDao {
     @Override
     public User findUserByNumber(long number) {
         String sql = "select * from user where number = ?";
-        User user = template.queryForObject(sql, new BeanPropertyRowMapper<>(User.class), number);
+        User user = template.query(sql, new ResultSetExtractor<User>() {
+            @Override
+            public User extractData(ResultSet resultSet) throws SQLException, DataAccessException {
+                User user1 = null;
+                if (resultSet.next()) {
+                    user1 = new User();
+                    user1.setNumber(resultSet.getLong("number"));
+                    user1.setName(resultSet.getString("name"));
+                    user1.setSex(resultSet.getBoolean("sex"));
+                    user1.setPhone(resultSet.getLong("phone"));
+                    user1.setEmail(resultSet.getString("email"));
+                }
+                return user1;
+            }
+        }, number);
         return user;
     }
 

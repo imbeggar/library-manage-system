@@ -29,7 +29,7 @@
             <div class="search-bar  clearfix ">
                 <form action="searchServlet", method="post">
                     <div class="bar-content clearfix fl">
-                        <input type="text" value="" class="fr" name="keyword" />
+                        <input type="text" value="" class="fr" name="keyword" placeholder="全部" />
                     </div>
                     <input type="submit" style="background-color: rgb(23,126,193)" class="search-font fr" value="搜索" />
                 </form>
@@ -38,6 +38,7 @@
                     <ul class="clearfix">
                         <li>书名</li>
                         <li>作者</li>
+                        <li>出版社</li>
                     </ul>
                 </div>
             </div>
@@ -45,10 +46,10 @@
         <%
             List<Book> books = (List<Book>) request.getAttribute("books");
             SimpleDateFormat template = new SimpleDateFormat("yyyy-MM-dd");
-            String search_msg = request.getParameter("search_msg");
-            if (search_msg != null && search_msg.equals(""))
+            String search_msg = (String) request.getAttribute("search_msg");
+            if (search_msg != null && !search_msg.equals(""))
                 out.print("\n" +
-                        "    <div class=\"alert alert-warning\" role=\"alert\"><strong>提示</strong>" + search_msg + "</div>");
+                        "    <div class=\"alert alert-warning\" role=\"alert\"><strong>提示:&nbsp&nbsp</strong>" + search_msg + "</div>");
             if (books != null && books.size() > 0){
         %>
         <div style="margin: 10px">

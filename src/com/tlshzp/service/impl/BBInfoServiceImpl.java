@@ -28,4 +28,9 @@ public class BBInfoServiceImpl implements BBInfoService {
     public int insertInfo(BBInfo bbInfo) {
         return bBinfoDao.insertInfo(bbInfo);
     }
+
+    @Override
+    public int deleteInfoById(int id) {
+        return bBinfoDao.deleteInfoById(id);
+    }
 }

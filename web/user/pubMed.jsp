@@ -8,9 +8,6 @@
 <%@ page import="com.tlshzp.service.impl.BookServiceImpl" %>
 <%@ page import="java.text.SimpleDateFormat" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!--学生借书信息
-    待改造！！！
--->
 
 <!DOCTYPE html>
 <html>
@@ -45,7 +42,7 @@
                 <div class="content">
                     <div class="left">
                         <i class="column"></i>
-                        <span class="tit">已借/外借</span>
+                        <span class="tit">已借</span>
                     </div>
                 </div>
                 <div class="bottom" style="margin: 10px">

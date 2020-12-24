@@ -47,7 +47,14 @@ public class LoginServlet extends HttpServlet {
             return;
         }
         Acount acount = as.findAcountByNumber(Long.parseLong(request.getParameter("number")));
-        if (acount == null || !password.equals(acount.getPassword())) {
+        if (acount == null) {
+            //提示信息
+            request.setAttribute("login_msg", "账户不存在");
+            //跳转登录页面
+            request.getRequestDispatcher("/index.jsp").forward(request, response);
+            return;
+        }
+        else if (!password.equals(acount.getPassword())) {
             //密码不正确
             //提示信息
             request.setAttribute("login_msg", "账号或密码错误!");
