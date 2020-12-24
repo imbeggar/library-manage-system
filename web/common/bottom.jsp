@@ -21,7 +21,7 @@
 </head>
 <body>
     <div align="center" id="box">
-        <span>当前在线人数<%=CountLitsener.getActiveNumber()%>&nbsp&nbsp本站成功登录人数<%
+        <span>当前在线人数<%=CountLitsener.getActiveNumber()%>&nbsp&nbsp本站总成功登录人数<%
             CountsServise cs = new CountsServiseImpl();
             out.print(cs.getCount());
         %></span>
