@@ -22,7 +22,7 @@
                 newTd0.innerHTML = "<input name='numbers' type='number' class='form-control'/>";
                 newTd1.innerHTML = "<input name='names' type='text' class='form-control'/>";
                 newTd2.innerHTML = "<select name='sexs', class='form-control'> <option value='男'>男</option> <option value='女'>女</option> </select>";
-                newTd3.innerHTML = "<input name='phones' type='number' class='form-control'/>";
+                newTd3.innerHTML = "<input name='phones' type='number' class='form-control' oninput='if(value.length > 11) value=value.slice(0,11)'/>";
                 newTd4.innerHTML = "<input name='emails' type='text' class='form-control'/>";
             }
         }
@@ -55,9 +55,9 @@
         </div>
     </form>
     <%
-        String addBook_msg = (String) request.getAttribute("addBook_msg");
-        if (addBook_msg != null && addBook_msg != "")
-            out.print("<div class=\"alert alert-warning\" role=\"alert\"><strong>提示</strong>" + addBook_msg + "</div>");
+        String addUser_msg = (String) request.getAttribute("addUser_msg");
+        if (addUser_msg != null && addUser_msg != "")
+            out.print("<div class=\"alert alert-warning\" role=\"alert\"><strong>提示</strong>" + addUser_msg + "</div>");
     %>
 </div>
 </body>

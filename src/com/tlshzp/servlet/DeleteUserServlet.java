@@ -29,11 +29,13 @@ public class DeleteUserServlet extends HttpServlet {
         List<BBInfo> bbInfos = bis.findInfoByNumber(number);
         if (acount.isIdentify())
             req.setAttribute("uu_msg", "管理员用户不可删除");
-        else if (bbInfos != null || bbInfos.size() != 0)
+        else if (bbInfos.size() != 0)
             req.setAttribute("uu_msg", "该用户到目前为止还有书未还，不可删除");
         else {
-            us.deleteUserByNumber(number);
-            req.setAttribute("uu_msg", "删除成功");
+            int res = us.deleteUserByNumber(number);
+            res += as.deleteAcountByNumber(number);
+            if (res == 2) req.setAttribute("uu_msg", "删除成功");
+            else req.setAttribute("uu_msg", "删除过程中可能产生错误");
         }
         req.getRequestDispatcher("usersManage.jsp").forward(req, resp);
         return;

@@ -7,37 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be3e6819-c5b0-436e-a378-84bf0757ba4c" name="Default Changelist" comment="添加cookie-session实现免登录">
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/BackBookServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/ForgetPwdServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/javax.mail.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/libs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/SearchNow.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/fail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/search404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/searchNo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_Terminal_Project_war_exploded/successful.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/dao/BBinfoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/dao/BBinfoDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/dao/impl/BBInfoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/dao/impl/BBInfoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/service/BBInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/service/BBInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/service/impl/BBInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/service/impl/BBInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/servlet/BorrowServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/BorrowServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/servlet/ReviseServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/ReviseServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/servlet/SearchServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/SearchServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/servlet/UpdateBookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/UpdateBookServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/SearchNow.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/booksManage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/booksManage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/common/personalInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/common/personalInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/common/revise.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/common/revise.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/fail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/forgetPwd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/forgetPwd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/search404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/searchNo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/successful.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/user/pubMed.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/user/pubMed.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/user/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/user/search.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/dao/AcountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/dao/AcountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/dao/impl/AcountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/dao/impl/AcountDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/service/AcountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/service/AcountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/service/impl/AcountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/service/impl/AcountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/servlet/AddUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/AddUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tlshzp/servlet/DeleteUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tlshzp/servlet/DeleteUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/addUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/addUser.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +24,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -322,7 +299,8 @@
       <workItem from="1608733193125" duration="5553000" />
       <workItem from="1608771496920" duration="3368000" />
       <workItem from="1608787239745" duration="5488000" />
-      <workItem from="1608793395800" duration="371000" />
+      <workItem from="1608793395800" duration="5426000" />
+      <workItem from="1608809986217" duration="4299000" />
     </task>
     <task id="LOCAL-00001" summary="add jar">
       <created>1608387864754</created>
@@ -366,7 +344,28 @@
       <option name="project" value="LOCAL" />
       <updated>1608725160786</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="添加忘记密码，修改bug,提示用户体验">
+      <created>1608794200987</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1608794200987</updated>
+    </task>
+    <task id="LOCAL-00008" summary="添加忘记密码，修改bug,提示用户体验">
+      <created>1608796761043</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608796761043</updated>
+    </task>
+    <task id="LOCAL-00009" summary="添加总访问人数统计">
+      <created>1608796868432</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1608796868432</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,7 +390,9 @@
     <MESSAGE value="添加查看借书信息功能" />
     <MESSAGE value="修复借书信息查询bug" />
     <MESSAGE value="修复bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复bug" />
+    <MESSAGE value="添加忘记密码，修改bug,提示用户体验" />
+    <MESSAGE value="添加总访问人数统计" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加总访问人数统计" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

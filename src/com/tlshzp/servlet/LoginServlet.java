@@ -2,7 +2,9 @@ package com.tlshzp.servlet;
 
 import com.tlshzp.pojo.Acount;
 import com.tlshzp.service.AcountService;
+import com.tlshzp.service.CountsServise;
 import com.tlshzp.service.impl.AcountServiceImpl;
+import com.tlshzp.service.impl.CountsServiseImpl;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -17,6 +19,7 @@ import java.util.UUID;
 @WebServlet("/loginServlet")
 public class LoginServlet extends HttpServlet {
     AcountService as = new AcountServiceImpl();
+    CountsServise cs = new CountsServiseImpl();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //设置编码
         request.setCharacterEncoding("utf-8");
@@ -64,6 +67,8 @@ public class LoginServlet extends HttpServlet {
         }
 
         //用户信息验证通过，设置免登录，跳转页面
+        int c = cs.getCount();
+        cs.addCount(c + 1);
         String uuid = UUID.randomUUID().toString();
         Cookie cookie = new Cookie("uuid", uuid);
         cookie.setMaxAge(60 * 60 * 24 * 3);
